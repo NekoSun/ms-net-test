@@ -1,0 +1,52 @@
+@mixin font($size, $weight, $line-height, $font-family, $color: null) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  font-family: $font-family;
+}
+
+@mixin button(
+  $width,
+  $padding,
+  $border-radius,
+  $color,
+  $text-align,
+  $pink: true
+) {
+  width: $width;
+  padding: $padding;
+  border-radius: $border-radius;
+  text-align: $text-align;
+
+  @include font(24px, 700, 29px);
+
+  @if $pink {
+    background-color: $brand-pink;
+    color: #fff;
+  } @else {
+    border: 1px solid currentColor;
+    color: $color;
+  }
+}
+
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
