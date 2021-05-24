@@ -1,23 +1,21 @@
 # ms-net-test
 
-## Project setup
+## Установка
 
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Компиляция, запуск json-server и vue-cli-service
 
 ```
 npm start
 ```
 
-### Compiles and minifies for production
-
 ```
-npm run build
+Перейти:   http://localhost:8080/
 ```
 
-### Customize configuration
+### Demo
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[тут](https://nekosun.github.io/ms-net-test/).
