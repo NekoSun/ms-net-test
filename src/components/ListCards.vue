@@ -79,7 +79,13 @@ export default {
   }
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1000px) {
+  .list-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1860px) {
   .list-cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
